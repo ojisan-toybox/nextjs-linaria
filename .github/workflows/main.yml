@@ -18,6 +18,8 @@ jobs:
           npm install
       - name: build
         run: npx next build
+        env:
+          GITHUB_PAGES: true
       - name: export
         run: |
           npx next export
