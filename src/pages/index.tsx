@@ -1,3 +1,11 @@
+import { css } from "linaria";
+
+const styles = {
+  title: css`
+    color: red;
+  `,
+};
+
 export default () => {
-  return <div>hello world!!</div>;
+  return <div className={styles.title}>hello world!!</div>;
 };
