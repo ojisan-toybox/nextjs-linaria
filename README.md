@@ -1,6 +1,14 @@
-# nextjs-linaria-
+# nextjs-linaria
 
-## Error
+```
+npm i
+
+npx next build
+
+npx next export
+```
+
+## 開発中に遭遇した Error
 
 - Error: Using the "css" tag in runtime is not supported. Make sure you have set up the Babel plugin correctly.
   - client に css を入れたときのエラー
