@@ -19,7 +19,9 @@ jobs:
       - name: build
         run: npx next build
       - name: export
-        run: npx next export
+        run: |
+          npx next export
+          touch out/.nojekyll
       - name: App Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
